@@ -12,5 +12,5 @@ if [ ! -d "$1" ]; then
   exit 1
 fi
 
-# This script will show the 10 largest files searching from the directory provided.
+# This line will show the 10 largest files searching from the directory provided.
 find "$1" -type f -exec du -h {} \; | sort -hr | head -10
