@@ -2,13 +2,12 @@
 
 # Specify the disk device or mount point
 DEVICE=/dev/sdb1
-MOUNT_POINT=/mnt/my_disk
 
 # Unmount the disk
-umount $MOUNT_POINT
+umount $DEVICE
 
 # Check if the disk is still mounted
-if mountpoint -q $MOUNT_POINT; then
+if mountpoint -q $DEVICE; then
   echo "Error: Disk is still mounted"
   exit 1
 fi
