@@ -38,3 +38,21 @@ Systems must therefore be designed that will detect errors quickly.
 - Enable optimizing for downstream work centers
 
 # The third way is to do with Continual Learning and Experimentation
+
+Dr Ron Westrum observed the importance of organizational culture on safety and performance.
+He defined 3 types of cultures that are summarized below:
+
+| Pathological                          | Bureaucratic                                      | Generative                         |
+| ------------------------------------- | ------------------------------------------------- | ---------------------------------- |
+| Information is hidden                 | Information may be ignored                        | Information is actively sought     |
+| Messengers are "shot"                 | Messengers are tolerated                          | Messengers are trained             |
+| Responsibilities are shirked          | Responsibilities are compartmented                | Responsibilities are shared        |
+| Bridging between teams is discouraged | Bridging between teams is allowed but discouraged | Bridging between teams is rewarded |
+| Failure is covered up                 | Organization is just and merciful                 | Failure causes inquiry             |
+| New ideas are crushed                 | New ideas create problems                         | New ideas are welcomed             |
+
+Bethany Macri (engineer from Etsy)
+
+> By removing blame, you remove fear; by removing fear, you enable honesty; and honesty enables prevention.
+
+## Improvement of daily work
