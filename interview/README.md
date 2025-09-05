@@ -157,3 +157,12 @@ Pros are often associated with IaC and automation. Dev and Prod environments can
 Cons - see this article https://sst.dev/blog/moving-away-from-cdk/
 
 ### How would you implement a caching layer for an API built with AWS Lambda and Node.js to improve performance and reduce costs?
+
+1. API Gateway can cache responses at the endpoint/method level reducing the number of Lambda invocations for repeated requests with the same parameters.
+   -- This would actually be useful on the investments api as the data changes at most daily.
+
+2. Redis (AWS elastic cache) to store and retrieve frequently accessed data. Lambda functions would connect to a redis cluster to check for cached data and only make expensive operations (like db calls) if no data in the cache.
+   -- This introduces more complexity though (and also cost in a different way)
+
+3. Warm lambda. This is where a lambda function stores data in memory for faster access.
+   -- This only works for requests to the same lambda instance.
